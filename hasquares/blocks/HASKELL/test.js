@@ -7,6 +7,7 @@ goog.provide('Blockly.Blocks.HaskTest');
 Blockly.Blocks['haskTestCoreNum'] = {
   init: function() {
 	this.setBlockClass (TypeClass[0])
+  this.setOriginClass (TypeClass[0])
   this.trueContext ([['Num', 'a'], ['a','a','a']]);
   this.functionContext ([['Num', 'a'], ['a','a','a']]);
     this.appendValueInput("inputL")
@@ -25,6 +26,7 @@ Blockly.Blocks['haskTestCoreNum'] = {
 Blockly.Blocks['haskTestInputNum'] = {
     init: function() {
 		this.setBlockClass (TypeClass[0])
+    this.setOriginClass (TypeClass[0])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("52");
@@ -37,6 +39,7 @@ Blockly.Blocks['haskTestInputNum'] = {
 Blockly.Blocks['haskTestCoreReal'] = {
   init: function() {
 	this.setBlockClass (TypeClass[1])
+  this.setOriginClass (TypeClass[1])
   this.trueContext ([['Num', 'a'], ['a','a','a']])
   this.functionContext ([['Num', 'a'], ['a','a','a']])
     this.appendValueInput("inputL")
@@ -56,6 +59,7 @@ Blockly.Blocks['haskTestCoreReal'] = {
 Blockly.Blocks['haskTestInputReal'] = {
     init: function() {
 		this.setBlockClass (TypeClass[1])
+    this.setOriginClass (TypeClass[1])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("501");
@@ -68,6 +72,7 @@ Blockly.Blocks['haskTestInputReal'] = {
 Blockly.Blocks['haskTestInputRealFrac'] = {
     init: function() {
 		this.setBlockClass (TypeClass[5])
+    this.setOriginClass (TypeClass[5])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("255");
@@ -80,6 +85,7 @@ Blockly.Blocks['haskTestInputRealFrac'] = {
 Blockly.Blocks['haskTestCoreEnum'] = {
   init: function() {
 	this.setBlockClass (TypeClass[3])
+  this.setOriginClass (TypeClass[3])
   this.trueContext ([['Enum', 'a'], ['a','a',['a']]])
   this.functionContext ([['Enum', 'a'], ['a','a',['a']]])
     this.appendValueInput("inputL")
@@ -98,6 +104,7 @@ Blockly.Blocks['haskTestCoreEnum'] = {
 Blockly.Blocks['haskTestInputEnum'] = {
     init: function() {
 		this.setBlockClass (TypeClass[3])
+    this.setOriginClass (TypeClass[3])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("1047");
@@ -110,6 +117,7 @@ Blockly.Blocks['haskTestInputEnum'] = {
 Blockly.Blocks['haskTestInputIntegral'] = {
     init: function() {
 		this.setBlockClass (TypeClass[4])
+    this.setOriginClass (TypeClass[4])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("404");
@@ -122,6 +130,7 @@ Blockly.Blocks['haskTestInputIntegral'] = {
 Blockly.Blocks['haskTestCoreIntegral'] = {
   init: function() {
 	this.setBlockClass (TypeClass[4])
+  this.setOriginClass (TypeClass[4])
   this.trueContext ([['Integral', 'a'], ['a','a','a']])
   this.functionContext ([['Integral', 'a'], ['a','a','a']])
     this.appendValueInput("inputL")
@@ -140,6 +149,7 @@ Blockly.Blocks['haskTestCoreIntegral'] = {
 Blockly.Blocks['haskTestInputRealFloat'] = {
     init: function() {
 		this.setBlockClass (TypeClass[7])
+    this.setOriginClass (TypeClass[7])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("2.66");
@@ -152,6 +162,7 @@ Blockly.Blocks['haskTestInputRealFloat'] = {
 Blockly.Blocks['haskTestCoreFractional'] = {
   init: function() {
 	this.setBlockClass (TypeClass[2])
+  this.setOriginClass (TypeClass[2])
   this.trueContext ([['Fractional', 'a'], ['a','a','a']])
   this.functionContext ([['Fractional', 'a'], ['a','a','a']])
     this.appendValueInput("inputL")
@@ -170,6 +181,7 @@ Blockly.Blocks['haskTestCoreFractional'] = {
 Blockly.Blocks['haskTestCoreFloating'] = {
   init: function() {
 	this.setBlockClass (TypeClass[7])
+  this.setOriginClass (TypeClass[7])
   this.trueContext ([['Floating', 'a'], ['a','a','a']])
   this.functionContext ([['Floating', 'a'], ['a','a','a']])
     this.appendValueInput("inputL")
@@ -188,6 +200,7 @@ Blockly.Blocks['haskTestCoreFloating'] = {
 Blockly.Blocks['haskTestInputInt'] = {
     init: function() {
 		this.setBlockClass (DataType[0])
+    this.setOriginClass (DataType[0])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("800");
@@ -200,6 +213,7 @@ Blockly.Blocks['haskTestInputInt'] = {
 Blockly.Blocks['haskTestInputInteger'] = {
     init: function() {
 		this.setBlockClass (DataType[1])
+    this.setOriginClass (DataType[1])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("256");
@@ -212,6 +226,7 @@ Blockly.Blocks['haskTestInputInteger'] = {
 Blockly.Blocks['haskTestInputFloat'] = {
     init: function() {
 		this.setBlockClass (DataType[2])
+    this.setOriginClass (DataType[2])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("4.1");
@@ -224,6 +239,7 @@ Blockly.Blocks['haskTestInputFloat'] = {
 Blockly.Blocks['haskTestInputDouble'] = {
     init: function() {
 		this.setBlockClass (DataType[3])
+    this.setOriginClass (DataType[3])
         this.appendValueInput('VALUE')
             .setCheck(['Null'])
             .appendField("10.101");
@@ -236,7 +252,7 @@ Blockly.Blocks['haskTestInputDouble'] = {
 //Test Blocks, Not implemented
 Blockly.Blocks['haskTestList'] = {
   init: function() {
-	this.setBlockClass (["List", ["a"]])
+	this.setBlockClass (["List", [undefined]])
   this.trueContext (["a"]);
   this.functionContext (["a"]);
     this.appendValueInput("inputL")
@@ -255,6 +271,7 @@ Blockly.Blocks['haskTestList'] = {
 Blockly.Blocks['haskTestFromIntegral'] = {
   init: function() {
 	this.setBlockClass (TypeClass[4])
+  this.setOriginClass (TypeClass[4])
   this.trueContext ([["Integral", "a", "Num", "b"], ["a", "b"] ]);
   this.functionContext ([["Integral", "a", "Num", "b"], ["a", "b"] ]);
     this.appendValueInput("inputL")
@@ -270,6 +287,7 @@ Blockly.Blocks['haskTestFromIntegral'] = {
 Blockly.Blocks['haskTestToInteger'] = {
   init: function() {
 	this.setBlockClass (TypeClass[4])
+  this.setOriginClass (TypeClass[4])
   this.trueContext ([["Integral", "a"], ["a", "Integer"] ]);
   this.functionContext ([["Integral", "a"], ["a", "Integer"] ]);
     this.appendValueInput("inputL")
